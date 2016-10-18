@@ -23,11 +23,47 @@ and open the template in the editor.
                 width: 1376px;
                 height: 900px;
             }
+            .form{
+                width: 900px;
+                margin: 0 auto;
+                height: 800px;
+            }
+            .formcontrol{
+                padding: 5px;
+            }
+            #label{
+                width: 150px;
+            }
+            form{
+                margin-left: 20%;
+            }
         </style>
     </head>
     <body>
+        <div class="wrapper">
         <div class="head">
             <h2>Register Form</h2>
+        </div>
+            <div class="form">
+                <form method="post" action="Register.php" enctype="multipart/form-data">
+                    <div class="formcontrol">
+                        <label id="label">ID Pelanggan:</label>
+                        <input style="margin-left: 21px;"type="text" name="id" placeholder="id">
+                    </div>
+                    
+                    <div class="formcontrol">
+                        <label id="label">Nama Pelanggan: </label>
+                        <input type="text" name="nama" placeholder="Nama">
+                    </div>
+                    <div class="formcontrol">
+                        <label id="label">Email: </label>
+                        <input style="margin-left: 70px;" type="text" name="email" placeholder="email">
+                    </div>
+                    <div class="formcontrol" style="margin-left: 130px;">
+                        <input type="submit" value="Tambah" style="width: 150px; background-color: Black;color: white;">
+                     </div>
+                </form>
+            </div>
         </div>
     </body>
 </html>
